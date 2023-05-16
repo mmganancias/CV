@@ -1,0 +1,27 @@
+
+// Storage y JSON
+
+[
+    {
+        "codigo": "01",
+        "nombre":"Bombacha",
+        "genero": "F",
+        "talle":"S",
+        "precioDeVenta": 1000
+    },
+    {
+        "codigo": "02",
+        "nombre": "Corpiño",
+        "genero": "F",
+        "talle": "M",
+        "precioDeVenta": 2000 
+    }, 
+    {
+        "codigo":"03",
+        "nombre": "Conjunto Ada",
+        "genero": "F",
+        "talle": "L",
+        "precioDeVenta": 3000
+    }
+]
+
