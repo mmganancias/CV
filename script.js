@@ -115,4 +115,20 @@ function validacion(e) {
 }
 let formulario = e.target
 
+class Carrito {
+    constructor (codigo, nombre, genero, talle, costo, precioDeVenta) {
+        this.codigo = codigo; 
+        this.nombre = nombre; 
+        this.genero = genero; 
+        this.talle = talle;
+        this.costo =costo; 
+        this.precioDeVenta = parseFloat(precioDeVenta);
+
+    }
+}
+
+localStorage.setItem("Carrito", JSON.stringify(Carrito));
+
+const carritoEnLs =JSON.parse(localStorage.getItem("Carrito"));
+
 
