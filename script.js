@@ -1,62 +1,47 @@
-//SEGUNDA ENTREGA
-class Produto {
-    constructor (codigo, nombre, genero, talle, costo, precioDeVenta) {
-        this.codigo = codigo; 
-        this.nombre = nombre; 
-        this.genero = genero; 
-        this.talle = talle;
-        this.costo =costo; 
-        this.precioDeVenta = parseFloat(precioDeVenta);
+const contenedorProductos = document.querySelector("#contenedor-productos");
 
-    }
+const mostrarProductos = (data) => {
+    data.forEach (producto =>{
+        const cardProducto = document.createElement("article");
+        cardProducto.setAttribute("id", "tarjeta-producto");
+        cardProducto.innerHTML = `
+        <div class= "card m-2" style="width: 15rem">
+            <a href="producto.html">
+              <img
+                src="${producto?.imagen}"
+                class="card-img-top"
+                height="300"
+                alt="${producto?.nombre}"
+               />
+            </a>
+            <div class="card-body">
+              <p class="card-text fw-bold">${producto?.nombre}</p>
+              <small class="text-secondary">${producto?.precioDeVenta}</small>
+              <button id= "${producto.codigo}" class="btn-compra">Comprar</button>
+            </div>
+        </div> 
+        `;
+        contenedorProductos.appendChild(cardProducto);
+    })
+    const btnComprar = document.querySelectorAll(".btn-compra");
+    btnComprar.forEach(el => {
+        el.addEventListener("click", (e) =>{
+            agregarAlCarrito(e.target.id)
+        });
+    })
 }
 
-Comprobaciones
+mostrarProductos(productos);
 
-const IVA = 1.21; 
-const margenDeGanancia = 1.30;
+const carrito = [];
 
-let arrayProductos = [];
-do {
-    let comprobacion = prompt ("Ingrese en nombre del producto o ESC para terminar de agregar productos");
-    if ((comprobacion === "ESC") || (comprobacion === "esc")) {
-        break;
-    } else {
-        while (comprobacion == "") {
-            comprobacion = prompt ("Ingrese en nombre del producto");
-        }
-    } nombreP = comprobacion; 
-    let CodigoP = prompt ("Ingrese en código del producto");
-    while (codigoP == "") {
-        codigoP = prompt ("Ingrese en código del producto");
-    }
-    let generoP = prompt  ("Ingrese el genero. M: Masculino y F: femenino");
-    while ((generoP != "M") || (genero != "F")) {
-        generoP = prompt ("Ingrese el genero. M: Masculino y F: femenino");
-    }
-    let talleP = prompt ("Ingrese el talle. Recuerde que las siglas son en ingles: S: pequeño M: Mediano L:Grande XL: Extragrande");
-    while ((talleP != "M") || (generoP != "F")); {
-        talleP = prompt ("Ingrese el talle. Recuerde que las siglas son en ingles: S: pequeño M: Mediano L:Grande XL: Extragrande");
-    }
-    let costoP = prompt ("Ingrese el costo");
-    if (costoP<100) {
-        console.log ("Revisa el costo ingresado");
-        costoP = prompt ("Ingrese el costo");
-    } else {
-        precioDeVentaP = costoP * IVA * margenDeGanancia; 
-    }
-    arrayProductos.push (new Producto (nombreP, CodigoP, generoP, talleP, costoP, precioDeVenta));
-} while ((comprobacion === "ESC") || (comprobacion === "esc"));
+function agregarAlCarrito(id){
 
-//Recorrer el array
+    let prodEncontrado = productos.find(prod => prod.id ===parseInt(id));
 
-arrayProductos.map ((a, i) => {
-    console.log (`$(i): $(p)`); 
-})
+    carrito.push(prodEncontrado);
+}
 
-/*TERCERA ENTREGA*/
-
-//DOM
 
 const contenido = document.querySelector (".card-body");
 
@@ -79,18 +64,6 @@ const tops = document.querySelector ("#tops");
 
 tops.innerText = "Tops";
 
-/*
-const primeraPresentacion = document.getElementById("lasMejoresMarcas");
-lasMejoresMarcas.innerHTML = "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aspernatur atque exercitationem iusto ad repudiandae iure asperiores dicta. Sunt quo dolorem doloremque, saepe molestiae quasi quos, reiciendis nemo maxime, dolore eos eum assumenda aliquam distinctio natus laudantium magni ex sapiente.</p>";
-
-
-const segundaPresentacion = document.querySelector ("#calidad");
-const calidad = document.createElement ("p");
-
-calidad.innerHTML = "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aspernatur atque exercitationem iusto ad repudiandae iure asperiores dicta. Sunt quo dolorem doloremque, saepe molestiae quasi quos, reiciendis nemo maxime, dolore eos eum assumenda aliquam distinctio natus laudantium magni ex sapiente.</p>";
-
-presentacion.append (calidad);
-
 
 document.body.onload = primeraPresentacion;
 
@@ -102,8 +75,6 @@ function primeraPresentacion () {
     let currentDiv =document.getElementById ("lasMejoresMarcas");
     document.body.insertBefore(newDiv, currentDiv);
 }
-
-*/
 
 //EVENTOS
 
