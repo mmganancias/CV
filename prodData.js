@@ -10,7 +10,11 @@ const productos = [
         }, 
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto1.jpg", 
-        "precioDeVenta": "2500"
+        "precioDeVenta": "2500",
+        "categoria": {
+            "nombre": "conjuntos",
+            "id": "ropa interior"
+        }
     },
     {
         "codigo": "02",
@@ -23,7 +27,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto2.jpg", 
-        "precioDeVent": "1000"
+        "precioDeVent": "1000",
+        "categoria": {
+            "nombre": "bombachas",
+            "id": "ropa interior"
+        }
     },
     {
         "codigo": "03",
@@ -36,7 +44,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto3.jpg",  
-        "precioDeVenta": "3000"
+        "precioDeVenta": "3000",
+        "categoria": {
+            "nombre": "conjuntos",
+            "id": "ropa interior"
+        }
     },
     {
         "codigo": "04",
@@ -49,7 +61,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto4.jpg",  
-        "precioDeVenta":"3500"
+        "precioDeVenta":"3500",
+        "categoria": {
+            "nombre": "conjuntos",
+            "id": "ropa interior"
+        }
     },
     {
         "codigo": "05",
@@ -62,7 +78,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto5.jpg",  
-        "precioDeVenta":"3500"
+        "precioDeVenta":"3500",
+        "categoria": {
+            "nombre": "conjuntos",
+            "id": "ropa interior"
+        }
     },
     {
         "codigo": "06",
@@ -75,7 +95,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto6.jpg",  
-        "precioDeVenta": "1500"
+        "precioDeVenta": "1500",
+        "categoria": {
+            "nombre": "bombachas",
+            "id": "ropa interior"
+        }
     },
     {
         "codigo": "07",
@@ -88,7 +112,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto7.jpg",  
-        "precioDeVenta": "2300"
+        "precioDeVenta": "2300",
+        "categoria": {
+            "nombre": "conjuntos",
+            "id": "ropa interior"
+        }
     },
     {
         "codigo": "08",
@@ -101,7 +129,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/ropainterior/conjunto8.jpg",  
-        "precioDeVenta": "3200"
+        "precioDeVenta": "3200",
+        "categoria": {
+            "nombre": "conjunto",
+            "id": "ropa interior"
+        }
     },
     {
         "codigo": "09",
@@ -114,7 +146,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/ropainterior/conjunto9.jpg", 
-        "precioDeVenta": "1300"
+        "precioDeVenta": "1300",
+        "categoria": {
+            "nombre": "conjunto",
+            "id": "ropa interior"
+        }
     },
     {
         "codigo": "010",
@@ -127,7 +163,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/accesorios/pantalon-softy-alto-invierno.jpg", 
-        "precioDeVenta": "2500"
+        "precioDeVenta": "2500",
+        "categoria": {
+            "nombre": "pijamas",
+            "id": "accesorios"
+        }
     },
     {
         "codigo": "011",
@@ -140,7 +180,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/pijama-manga-larga-mondrian.jpg", 
-        "precioDeVenta": "1000"
+        "precioDeVenta": "1000",
+        "categoria": {
+            "nombre": "pijamas",
+            "id": "accesorios"
+        }
     },
     {
         "codigo": "012",
@@ -153,7 +197,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/pijama-manga-larga-day-and-night.jpg", 
-        "precioDeVenta": 3000
+        "precioDeVenta": "3000",
+        "categoria": {
+            "nombre": "pijamas",
+            "id": "accesorios"
+        }
     },
     {
         "codigo": "013",
@@ -166,7 +214,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/accesorios/1-2-cana-power-stripes-everyday.jpg", 
-        "precioDeVenta": "3500"
+        "precioDeVenta": "3500",
+        "categoria": {
+            "nombre": "medias",
+            "id": "accesorios"
+        }
     },
     {
         "codigo": "014",
@@ -179,7 +231,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/pijama-manga-larga-tulip.jpg", 
-        "precioDeVenta": "3500"
+        "precioDeVenta": "3500",
+        "categoria": {
+            "nombre": "pijamas",
+            "id": "accesorios"
+        }
     },
     {
         "codigo": "015",
@@ -192,7 +248,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/soquetes-deers-color.jpg", 
-        "precioDeVenta": "1500"
+        "precioDeVenta": "1500",
+        "categoria": {
+            "nombre": "medias",
+            "id": "accesorios"
+        }
     },
     {
         "codigo": "016",
@@ -205,7 +265,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/accesorios/pantuflas-softy-alto-invierno.jpg", 
-        "precioDeVenta": "2300"
+        "precioDeVenta": "2300",
+        "categoria": {
+            "nombre": "pantuflas",
+            "id": "accesorios"
+        }
     },
     {
         "codigo": "017",
@@ -218,7 +282,11 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/accesorios/pantalon-cuadrille-softy-alto-invierno.jpg", 
-        "precioDeVenta": "3200"
+        "precioDeVenta": "3200",
+        "categoria": {
+            "nombre": "pijamas",
+            "id": "accesorios"
+        }
     },
     {
         "codigo": "18",
@@ -231,6 +299,45 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/pijama-manga-larga-mondrianc.jpg", 
-        "precioDeVenta": "1300"
+        "precioDeVenta": "1300",
+        "categoria": {
+            "nombre": "pijamas",
+            "id": "accesorios"
+        }
+    },
+    {
+        "codigo": "19",
+        "nombre": "Corpiño-black",
+        "genero": "F",
+        "talle":{
+            "S" : "true",
+            "M": "true",
+            "L": "true"
+        },  
+        "stock": "true",
+        "imagen":"../imgs/corpiño1.jpg", 
+        "precioDeVenta": "1700",
+        "categoria": {
+            "nombre": "corpiños",
+            "id": "ropa interior"
+        }
+    },
+    {
+        "codigo": "10",
+        "nombre": "Corpiño-pink",
+        "genero": "F",
+        "talle":{
+            "S" : "true",
+            "M": "true",
+            "L": "true"
+        },  
+        "stock": "true",
+        "imagen":"../imgs/corpiño2.jpg", 
+        "precioDeVenta": "1700",
+        "categoria": {
+            "nombre": "corpiños",
+            "id": "ropa interior"
+        }
     }
+
 ]
