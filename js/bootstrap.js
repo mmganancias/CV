@@ -1,31 +1,46 @@
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll("#boton-categoria");
 
-function mostrarProductos() {
-    producto.forEach(producto =>{
+function mostrarProductos(productosSeleccionados) {
+
+    contenedorProductos.innerHTML= "";
+
+    productosSeleccionados.forEach(producto => {
 
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-        <div clas="producto" class= "card m-2" style="width: 15rem">
+        <div class="col col-9 d-flex flex-wrap justify-content-between">
+          <div class="producto" class= "card m-2" style="width: 15rem">
             <a href=${producto.nombre}">
-              <img
-                src="${producto.imagen}"
-                class="card-img-top"
-                height="300"
-                alt="${producto.nombre}"
+                <img
+                  src="${producto.imagen}"
+                  class="card-img-top"
+                  height="300"
+                  alt="${producto.nombre}"
                />
-            </a>
-            <div class="card-body">
-              <p class="card-text fw-bold">${producto.nombre}</p>
-              <small class="text-secondary">${producto.precioDeVenta}</small>
-              <button id= "${producto.codigo}" class="btn-compra">Comprar</button>
-            </div>
-        </div> `
+             </a>
+              <div class="card-body">
+                <p class="card-text fw-bold">${producto.nombre}</p>
+                <small class="text-secondary">${producto.precioDeVenta}</small>
+                <button id= "${producto.codigo}" class="btn-compra">Comprar</button>
+              </div>
+          </div>
+        </div>`
         contenedorProductos.appendChild(div);
     })
 }
-mostrarProductos()
+
+mostrarProductos(productos)
+
+botonesCategorias.forEach(boton => {
+    boton.addEventListener("click", (e) => {
+        
+        const productoCategoria = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+        mostrarProductos(productoCategoria);
+
+    })
+})
 
 /*
 const mostrarProductos = (data) => {
@@ -73,14 +88,4 @@ class Produto {
 
     }
 }   
-
-/*eliminando el defaul del formulario
-let newsLetter = document.getElementById("formulario");
-newsLetter.addEventListener("submit", (e) => validacion(e));
-
-function validacion(e) {
-    e.preventDefault();
-}
-
-let formulario = e.target
 */

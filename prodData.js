@@ -27,7 +27,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto2.jpg", 
-        "precioDeVent": "1000",
+        "precioDeVent": "1005",
         "categoria": {
             "nombre": "bombachas",
             "id": "ropa interior"
@@ -315,7 +315,7 @@ const productos = [
             "L": "true"
         },  
         "stock": "true",
-        "imagen":"../imgs/corpiño1.jpg", 
+        "imagen":"../imgs/ropainterior/corpiño1.jpg", 
         "precioDeVenta": "1700",
         "categoria": {
             "nombre": "corpiños",
@@ -332,7 +332,7 @@ const productos = [
             "L": "true"
         },  
         "stock": "true",
-        "imagen":"../imgs/corpiño2.jpg", 
+        "imagen":"../imgs/ropainterior/corpiño2.jpg", 
         "precioDeVenta": "1700",
         "categoria": {
             "nombre": "corpiños",
