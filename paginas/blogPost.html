@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="../imgs/icon.png" type="image/x-icon" />
     <!-- Iconos Bootstrap -->
     <link rel="shortcut icon" href="../imgs/icon.jfif" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
     <title>GINGER | Blog Post</title>
   </head>
   <body>
@@ -46,7 +47,7 @@
               >
               <ul class="navbar-nav">
                 <li class="nav-item d-flex align-items-center">
-                  <a class="nav-link mx-2" href="#">
+                  <a id="usuario" class="nav-link mx-2" href="#">
                     <i class="bi bi-person-fill"></i> Mi cuenta
                   </a>
                 </li>
@@ -322,7 +323,7 @@
             class="form-control me-2"
             placeholder="Tu correo electrónico"
           />
-          <button type="submit" class="btn btn-outline-dark">
+          <button id="myBtn" type="submit" class="btn btn-outline-dark">
             Suscribirse
           </button>
         </form>
