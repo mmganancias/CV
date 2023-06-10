@@ -1,5 +1,5 @@
 const contenedorProductos = document.querySelector("#contenedor-productos");
-const botonesCategorias = document.querySelectorAll("#boton-categoria");
+const botonesCategorias = document.querySelectorAll(".boton-categoria");
 
 function mostrarProductos(productosSeleccionados) {
 
@@ -11,7 +11,7 @@ function mostrarProductos(productosSeleccionados) {
         div.classList.add("producto");
         div.innerHTML = `
         <div class="col col-9 d-flex flex-wrap justify-content-between">
-          <div class="producto" class= "card m-2" style="width: 15rem">
+          <div class="producto" class= "card m-2" style="width: 16rem">
             <a href=${producto.nombre}">
                 <img
                   src="${producto.imagen}"
@@ -23,20 +23,20 @@ function mostrarProductos(productosSeleccionados) {
               <div class="card-body">
                 <p class="card-text fw-bold">${producto.nombre}</p>
                 <small class="text-secondary">${producto.precioDeVenta}</small>
-                <button id= "${producto.codigo}" class="btn-compra">Comprar</button>
               </div>
+              <button id= "${producto.codigo}" class="btn-compra">Comprar</button>
           </div>
         </div>`
         contenedorProductos.appendChild(div);
     })
 }
 
-mostrarProductos(productos)
+mostrarProductos(productos);
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
         
-        const productoCategoria = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+        const productoCategoria = productos.filter(producto => producto.categoria.nombre === e.currentTarget.id);
         mostrarProductos(productoCategoria);
 
     })

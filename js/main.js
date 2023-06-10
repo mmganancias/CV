@@ -23,7 +23,7 @@ btn.addEventListener('click', function () {
 
 const usuario = document.querySelector('#')
 
-usuario.addEventListener('click', () => {
+usuario.addEventListener('click', async () => {
     const { value: email } = await Swal.fire({
         title: 'Input email address',
         input: 'email',

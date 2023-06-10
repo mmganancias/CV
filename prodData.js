@@ -10,7 +10,7 @@ const productos = [
         }, 
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto1.jpg", 
-        "precioDeVenta": "2500",
+        "precioDeVenta": "$2500",
         "categoria": {
             "nombre": "conjuntos",
             "id": "ropa interior"
@@ -27,7 +27,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto2.jpg", 
-        "precioDeVent": "1005",
+        "precioDeVenta": "$1005",
         "categoria": {
             "nombre": "bombachas",
             "id": "ropa interior"
@@ -44,7 +44,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto3.jpg",  
-        "precioDeVenta": "3000",
+        "precioDeVenta": "$3000",
         "categoria": {
             "nombre": "conjuntos",
             "id": "ropa interior"
@@ -61,7 +61,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto4.jpg",  
-        "precioDeVenta":"3500",
+        "precioDeVenta":"$3500",
         "categoria": {
             "nombre": "conjuntos",
             "id": "ropa interior"
@@ -78,7 +78,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto5.jpg",  
-        "precioDeVenta":"3500",
+        "precioDeVenta":"$3500",
         "categoria": {
             "nombre": "conjuntos",
             "id": "ropa interior"
@@ -95,7 +95,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto6.jpg",  
-        "precioDeVenta": "1500",
+        "precioDeVenta": "$1500",
         "categoria": {
             "nombre": "bombachas",
             "id": "ropa interior"
@@ -112,7 +112,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/ropainterior/conjunto7.jpg",  
-        "precioDeVenta": "2300",
+        "precioDeVenta": "$2300",
         "categoria": {
             "nombre": "conjuntos",
             "id": "ropa interior"
@@ -129,9 +129,9 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/ropainterior/conjunto8.jpg",  
-        "precioDeVenta": "3200",
+        "precioDeVenta": "$3200",
         "categoria": {
-            "nombre": "conjunto",
+            "nombre": "conjuntos",
             "id": "ropa interior"
         }
     },
@@ -146,9 +146,9 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/ropainterior/conjunto9.jpg", 
-        "precioDeVenta": "1300",
+        "precioDeVenta": "$1300",
         "categoria": {
-            "nombre": "conjunto",
+            "nombre": "conjuntos",
             "id": "ropa interior"
         }
     },
@@ -163,7 +163,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/accesorios/pantalon-softy-alto-invierno.jpg", 
-        "precioDeVenta": "2500",
+        "precioDeVenta": "$2500",
         "categoria": {
             "nombre": "pijamas",
             "id": "accesorios"
@@ -180,7 +180,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/pijama-manga-larga-mondrian.jpg", 
-        "precioDeVenta": "1000",
+        "precioDeVenta": "$1000",
         "categoria": {
             "nombre": "pijamas",
             "id": "accesorios"
@@ -197,7 +197,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/pijama-manga-larga-day-and-night.jpg", 
-        "precioDeVenta": "3000",
+        "precioDeVenta": "$3000",
         "categoria": {
             "nombre": "pijamas",
             "id": "accesorios"
@@ -214,7 +214,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/accesorios/1-2-cana-power-stripes-everyday.jpg", 
-        "precioDeVenta": "3500",
+        "precioDeVenta": "$3500",
         "categoria": {
             "nombre": "medias",
             "id": "accesorios"
@@ -231,7 +231,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/pijama-manga-larga-tulip.jpg", 
-        "precioDeVenta": "3500",
+        "precioDeVenta": "$3500",
         "categoria": {
             "nombre": "pijamas",
             "id": "accesorios"
@@ -248,7 +248,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/soquetes-deers-color.jpg", 
-        "precioDeVenta": "1500",
+        "precioDeVenta": "$1500",
         "categoria": {
             "nombre": "medias",
             "id": "accesorios"
@@ -265,7 +265,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/accesorios/pantuflas-softy-alto-invierno.jpg", 
-        "precioDeVenta": "2300",
+        "precioDeVenta": "$2300",
         "categoria": {
             "nombre": "pantuflas",
             "id": "accesorios"
@@ -282,7 +282,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen": "../imgs/accesorios/pantalon-cuadrille-softy-alto-invierno.jpg", 
-        "precioDeVenta": "3200",
+        "precioDeVenta": "$3200",
         "categoria": {
             "nombre": "pijamas",
             "id": "accesorios"
@@ -299,7 +299,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/accesorios/pijama-manga-larga-mondrianc.jpg", 
-        "precioDeVenta": "1300",
+        "precioDeVenta": "$1300",
         "categoria": {
             "nombre": "pijamas",
             "id": "accesorios"
@@ -316,7 +316,7 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/ropainterior/corpiño1.jpg", 
-        "precioDeVenta": "1700",
+        "precioDeVenta": "$1700",
         "categoria": {
             "nombre": "corpiños",
             "id": "ropa interior"
@@ -333,9 +333,60 @@ const productos = [
         },  
         "stock": "true",
         "imagen":"../imgs/ropainterior/corpiño2.jpg", 
-        "precioDeVenta": "1700",
+        "precioDeVenta": "$1700",
         "categoria": {
             "nombre": "corpiños",
+            "id": "ropa interior"
+        }
+    },
+    {
+        "codigo": "11",
+        "nombre": "Colaless-bls",
+        "genero": "F",
+        "talle":{
+            "S" : "true",
+            "M": "true",
+            "L": "true"
+        },  
+        "stock": "true",
+        "imagen":"../imgs/ropainterior/colaless.jpg", 
+        "precioDeVenta": "$1700",
+        "categoria": {
+            "nombre": "colaless",
+            "id": "ropa interior"
+        }
+    },
+    {
+        "codigo": "12",
+        "nombre": "Body-alina",
+        "genero": "F",
+        "talle":{
+            "S" : "true",
+            "M": "true",
+            "L": "true"
+        },  
+        "stock": "true",
+        "imagen":"../imgs/ropainterior/body1.jpg", 
+        "precioDeVenta": "$4700",
+        "categoria": {
+            "nombre": "bodys",
+            "id": "ropa interior"
+        }
+    },
+    {
+        "codigo": "13",
+        "nombre": "Body-Soni",
+        "genero": "F",
+        "talle":{
+            "S" : "true",
+            "M": "true",
+            "L": "true"
+        },  
+        "stock": "true",
+        "imagen":"../imgs/ropainterior/body2.jpg", 
+        "precioDeVenta": "$1300",
+        "categoria": {
+            "nombre": "bodys",
             "id": "ropa interior"
         }
     }
