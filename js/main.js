@@ -9,18 +9,6 @@ function validacion(e) {
 
 let formulario = e.target
 
-*/
-
-const btn = document.querySelector("#myBtn")
-
-btn.addEventListener('click', function () {
-
-    Swal.fire({
-        title: 'Muchas gracias!',
-        text: 'Te enviaremos todas nuestras novedades!',
-    })
-})
-
 const usuario = document.querySelector('#')
 
 usuario.addEventListener('click', async () => {
@@ -35,6 +23,18 @@ usuario.addEventListener('click', async () => {
         Swal.fire(`Entered email: ${email}`)
       }
 
+})*/
+
+const btn = document.querySelector("#myBtn")
+
+btn.addEventListener('click', function () {
+
+    Swal.fire({
+        title: 'Muchas gracias!',
+        text: 'Te enviaremos todas nuestras novedades!',
+    })
 })
+
+
 
 
